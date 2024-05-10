@@ -1,0 +1,12 @@
+txt2image:
+  api:
+    num_replicas: 2
+  processor:
+    num_gpus: 1
+    min_rep: 1
+    max_rep: 2
+  inference:
+    image_size: 512
+    revision: 'fp16'
+  model:
+    _id: "stabilityai/stable-diffusion-2"
